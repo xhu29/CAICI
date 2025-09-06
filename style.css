@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 header {
-  background: #222;
+  background: #27C5F5; /* background color: #222 means dark grey */
   color: #fff;
   padding: 1rem 2rem;
   text-align: center;
