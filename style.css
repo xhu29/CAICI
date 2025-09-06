@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 header {
-  background: #27C5F5; /* background color: #222 means dark grey */
+  background: #F20D0A; /* background color: #222 means dark grey */
   color: #fff;
   padding: 1rem 2rem;
   text-align: center;
@@ -45,7 +45,7 @@ h2 {
 footer {
   text-align: center;
   padding: 0.2rem 1rem;  /* 0.3rem top & bottom, 1rem left & right */
-  background: #F32E2B; /* background color: #222 means dark grey; #27C5F5 is sky blue*/
+  background: #F20D0A; /* background color: #222 means dark grey; #27C5F5 is sky blue*/
   color: #fff; /* text color */
   margin-top: 2rem;
 }
