@@ -17,7 +17,7 @@ header {
   color: #fff;
   padding: 0.5rem 2rem;
   text-align: center;
-  position: sticky;  /* makes it stick */
+/*   position: sticky;  /* makes it stick */ */
   top: 0;            /* distance from top */
   z-index: 1000;     /* stays above other content */
 }
