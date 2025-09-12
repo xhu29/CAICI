@@ -1,23 +1,36 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
+/* Basic page setup */
+html, body {
+  height: auto;        /* allow scroll */
+  overflow: visible;
   margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
   line-height: 1.6;
   background: #f9f9f9;
   color: #333;
 }
+
+/* Header */
 header {
-  background: #F20D0A; /* background color: #222 means dark grey */
+  background: #F20D0A;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   text-align: center;
+  position: sticky;  /* makes it stick */
+  top: 0;            /* distance from top */
+  z-index: 1000;     /* stays above other content */
 }
+
 header h1 {
   margin: 0;
+  font-size: 1.8rem;
 }
+
 nav {
   margin-top: 0.5rem;
 }
+
 nav a {
   color: #fff;
   margin: 0 12px;
@@ -26,27 +39,91 @@ nav a {
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
 }
+
 nav a:hover {
   background: #444;
 }
+
 nav a.active {
   background: #f9f9f9;
   color: #222;
 }
+
+/* Container */
 .container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 1500px;
+  margin: 1rem auto;
+  padding: 1rem 1rem;
 }
-h2 {
+
+/* Groups */
+.group {
+  margin-bottom: 3rem;
+}
+
+.group h2 {
   color: #444;
   border-bottom: 2px solid #ddd;
   padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
+
+/* Person layout */
+.person {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.headshot {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.person-info {
+  flex: 1;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 0.2rem 1rem;  /* 0.3rem top & bottom, 1rem left & right */
-  background: #F20D0A; /* background color: #222 means dark grey; #27C5F5 is sky blue*/
-  color: #fff; /* text color */
-  margin-top: 2rem;
+  padding: 0.3rem 1rem;
+  background: #F20D0A;
+  color: #fff;
+
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+  .person {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .headshot {
+    max-width: 60%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .headshot {
+    max-width: 80%;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
 }
