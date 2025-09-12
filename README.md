@@ -1,1 +1,1 @@
-# Website for the iCANdu (Intelligent Construction & Automation for New Development in Built Environment) Research Group
+# Website for the CAICI (Construction Automation and Intelligent Civil Infrastructure) Research Group
